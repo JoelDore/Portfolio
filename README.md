@@ -1,6 +1,8 @@
 # Portfolio-Website
 
-Responsive portfolio design 
+Responsive portfolio design
+
+Deployed on [GitHub Pages](https://joeldore.github.io/Portfolio-Website/)
 
 ## Description
 
