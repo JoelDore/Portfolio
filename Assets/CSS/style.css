@@ -8,11 +8,23 @@ nav {
     width: 100%;
 }
 
-img {
+.img-thumbnail {
     border-style: outset; max-width: 100%;
+}
+
+.link {
+    font-size: small;
+    text-decoration: underline;
+    color: #222;
 }
 
 p {
     font-family: Arial, Helvetica, sans-serif;
     text-align: justify;
+}
+
+@media only screen and (min-width: 992px) {
+    strong {
+        font-size: x-large;
+    }
 }
