@@ -8,6 +8,11 @@ nav {
     width: 100%;
 }
 
+p {
+    font-family: Arial, Helvetica, sans-serif;
+    text-align: justify;
+}
+
 .img-thumbnail {
     border-style: outset; max-width: 100%;
 }
@@ -18,9 +23,10 @@ nav {
     color: #222;
 }
 
-p {
-    font-family: Arial, Helvetica, sans-serif;
-    text-align: justify;
+#contactContainer, #aboutMeContainer {
+    max-width: 45em;
+    background-color: rgba(50, 50, 50, 0.75);
+    border-radius: 12px;
 }
 
 @media only screen and (min-width: 992px) {
