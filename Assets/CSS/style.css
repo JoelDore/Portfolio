@@ -24,8 +24,13 @@ p {
 
 .link {
     font-size: smaller;
+    font-weight: bold;
     text-decoration: underline;
     color: #222;
+}
+
+.link:hover {
+    color: white;
 }
 
 #contactContainer, #aboutMeContainer {
@@ -36,6 +41,16 @@ p {
 
 .contact-links {
     text-align: center;
+}
+
+.contact-btn {
+    border: 3px solid hsl(171, 91%, 44%);
+    background-color: hsl(171, 91%, 44%);
+    color: white;
+}
+
+.contact-btn:focus {
+    background-color: hsl(171, 91%, 35%);
 }
 
 @media only screen and (min-width: 992px) {
