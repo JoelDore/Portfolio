@@ -1,10 +1,14 @@
 const navbar = $(".navbar")
+const navbarNameText = $("#nav-name")
 
-// Change navbar bg to transparent when not at top of page
+// Navbar scroll event
 $(window).scroll(() => {
     if ($(this).scrollTop() > navbar.height()) {
+        // transparent bg, remove name
         navbar.addClass("transparent")
+        navbarNameText.text("")
     } else {
         navbar.removeClass("transparent")
+        navbarNameText.text("Joel Dore")
     }
 })
