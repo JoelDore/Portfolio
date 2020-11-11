@@ -25,6 +25,7 @@
     <script defer src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"
         integrity="sha384-B4gt1jrGC7Jh4AgTPSdUtOBvfO8shuf57BaghqFfPlYxofvL8/KUEfYiJOMMV+rV"
         crossorigin="anonymous"></script>
+    <script defer src="./Assets/JS/script.js"></script>
 </head>
 
 <body>
@@ -32,7 +33,7 @@
 
     <!-- Navbar (Remember to update on ALL pages) -->
     <header>
-        <nav class="navbar navbar-expand-sm navbar-dark">
+        <nav class="navbar fixed-top navbar-expand-sm navbar-dark">
 
             <a class="navbar-brand" href="#">
                 <img src="Assets/Images/profile.jpg" width="30" height="30"
@@ -55,7 +56,7 @@
         </nav>
     </header>
     <!-- Contact Form -->
-    <main class="container py-3">
+    <main class="container py-5">
 
         <div class="row mt-5">
             <div class="col-sm-12 text-center">
@@ -65,25 +66,25 @@
         <div class="row mx-auto my-4 text-white" id="contactContainer">
             <div class="card col-sm-12 bg-transparent">
                 <div class="card-body">
-                    <form action="mailto:dore.joel.dore@gmail.com" method="GET" enctype="multipart/form-data"
-                        name="emailForm">
+                    <form action="https://formspree.io/f/xaylbqqr" method="POST">
                         <div class="row">
                             <div class="form-group col-sm-6">
-                                <label for="contactName">Name:</label>
-                                <input type="text" class="form-control" id="contactName" placeholder="Name">
+                                <label for="contactName">Your name:</label>
+                                <input type="text" name="name" class="form-control" required>
                             </div>
                             <div class="form-group col-sm-6">
                                 <label for="contactEmail">Email:</label>
-                                <input type="text" class="form-control" id="contactEmail" placeholder="Email">
+                                <input type="email" name="_replyto" class="form-control" required>
                             </div>
                         </div>
                         <div class="form-group">
                             <label for="contactMessage">Message:</label>
-                            <textarea name="body" class="form-control" id="contactMessage" rows="4"
-                                placeholder="Message"></textarea>
+                            <textarea name="message" class="form-control" rows="5" required
+                                placeholder="I would love to hire you. Let's talk more!"></textarea>
                         </div><br>
                         <div class="form-group text-center">
-                            <input type="submit" value="Get in touch!" class="btn contact-btn">
+                            <input type="hidden" name="_next" value="https://joeldore.github.io/Portfolio-Website/" />
+                            <button type="submit" class="btn contact-btn">Get in touch</button>
                         </div>
                     </form>
                 </div>

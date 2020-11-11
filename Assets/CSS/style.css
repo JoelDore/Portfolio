@@ -3,14 +3,15 @@
 }
 
 body {
-    height: 100%;
-    position: relative;
     background: radial-gradient(hsl(200, 100%, 75%), hsl(200, 100%, 25%)) fixed center;
 }
 
 nav {
-    background: rgba(50, 50, 50, 0.6) ;
+    background-color: rgba(50, 50, 50, 0.6) ;
     width: 100%;
+}
+.navbar.transparent {
+    background: none;
 }
 
 p {
@@ -37,6 +38,10 @@ p {
     max-width: 45em;
     background-color: rgba(50, 50, 50, 0.75);
     border-radius: 12px;
+}
+
+textarea {
+    resize: none;
 }
 
 .contact-links {
