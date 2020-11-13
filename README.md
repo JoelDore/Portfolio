@@ -2,7 +2,7 @@
 
 Responsive portfolio design
 
-Deployed on [GitHub Pages](https://joeldore.github.io/Portfolio-Website/)
+Deployed on [GitHub Pages](https://joeldore.github.io/Portfolio/)
 
 ## Description
 
@@ -21,5 +21,5 @@ Contains three main pages:
 ![contact.html](Assets/Images/Screenshots/contact.png)
 
 ### Badges
-![GitHub top language](https://img.shields.io/github/languages/top/JoelDore/Portfolio-Website) ![GitHub repo size](https://img.shields.io/github/repo-size/JoelDore/Portfolio-Website)  
-![GitHub](https://img.shields.io/github/license/JoelDore/Portfolio-Website)  
+![GitHub top language](https://img.shields.io/github/languages/top/JoelDore/Portfolio-Website) ![GitHub repo size](https://img.shields.io/github/repo-size/JoelDore/Portfolio)  
+![GitHub](https://img.shields.io/github/license/JoelDore/Portfolio)  
