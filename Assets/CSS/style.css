@@ -8,7 +8,6 @@ body {
 
 nav {
     background-color: rgba(50, 50, 50, 0.6) ;
-    width: 100%;
 }
 .navbar.transparent {
     background: none;
@@ -17,35 +16,52 @@ nav {
 .link {
     font-size: smaller;
     font-weight: bold;
-    text-decoration: underline;
-    color: #222;
-}
-
-.link:hover {
     color: white;
 }
+.link:hover {
+    font-size: normal;
+    color: black;
+}
 
-#contactContainer, #aboutMeContainer {
-    max-width: 45em;
+.about-me-img {
+    border-radius: 15px 15px 0 0;
+    max-width: 45rem;
+}
+
+.about-me-text {
+    font-size: smaller;
+}
+
+.about-me-container, .portfolio-container, .contact-container {
     background-color: rgba(50, 50, 50, 0.75);
+    border-radius: 15px;
+    max-width: 45em;
 }
 
 textarea {
     resize: none;
 }
 
-.contact-btn {
-    border: 3px solid hsl(171, 91%, 44%);
-    background-color: hsl(171, 91%, 44%);
-    color: white;
+::placeholder {
+    color: #ccc !important;  
 }
 
-.contact-btn:focus {
+.btn-teal {
+    border: 3px solid hsl(171, 91%, 44%);
+    background-color: hsl(171, 91%, 44%);
+}
+.btn-teal:hover {
     background-color: hsl(171, 91%, 35%);
 }
 
 @media only screen and (min-width: 992px) {
     strong {
         font-size: x-large;
+    }
+    .about-me-text {
+        font-size: medium;
+    }
+    .portfolio-container {
+        max-width: 75rem;
     }
 }
