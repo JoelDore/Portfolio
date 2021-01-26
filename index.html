@@ -1,217 +1,22 @@
 <!DOCTYPE html>
-<html lang="en">
+<!--[if lt IE 7]>      <html class="no-js lt-ie9 lt-ie8 lt-ie7"> <![endif]-->
+<!--[if IE 7]>         <html class="no-js lt-ie9 lt-ie8"> <![endif]-->
+<!--[if IE 8]>         <html class="no-js lt-ie9"> <![endif]-->
+<!--[if gt IE 8]>      <html class="no-js"> <!--<![endif]-->
+<html>
 
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <title>Joel Dore | Web Developer</title>
     <link rel="shortcut icon" href="Assets/Images/favicon.ico" type="image/x-icon">
-    <!-- Bootstrap CSS -->
-    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css"
-        integrity="sha384-JcKb8q3iqJ61gNV9KGb8thSsNjpSL0n8PARn9HuZOnIxN0hoP+VmmDGMN5t9UJ0Z" crossorigin="anonymous">
-    <!-- Google Fonts -->
-    <link rel="stylesheet"
-        href="https://fonts.googleapis.com/css?family=Lato:100,100italic,300,300italic,regular,italic,700,700italic,900,900italic" />
     <link rel="stylesheet" href="Assets/CSS/style.css">
 </head>
 
 <body>
-    <header>
-        <nav class="navbar fixed-top navbar-expand-md navbar-dark w-100">
 
-            <a class="navbar-brand" href="#">
-                <img src="Assets/Images/profile.jpg" width="30" height="30"
-                    class="rounded-circle d-inline-block align-top" alt="Headshot">
-                <span id="nav-name">Joel Dore</span>
-            </a>
 
-            <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNavAltMarkup"
-                aria-controls="navbarNavAltMarkup" aria-expanded="false" aria-label="Toggle navigation">
-                <span class="navbar-toggler-icon"></span>
-            </button>
-
-            <div class="collapse navbar-collapse" id="navbarNavAltMarkup">
-                <div class="navbar-nav ml-md-auto">
-                    <a class="nav-item nav-link" href="#about-me">About Me</a>
-                    <a class="nav-item nav-link" href="#portfolio">Portfolio</a>
-                    <a class="nav-item nav-link" href="#contact">Contact</a>
-                </div>
-            </div>
-        </nav>
-    </header>
-
-    <!-- About Me -->
-    <section class="container mt-3 mt-sm-5 py-5 text-center" id="about-me">
-        <h1>About Me</h1>
-        <div class="about-me-container row my-3 mx-auto text-white">
-            <img class="w-100 h-100 mb-3 about-me-img" src="Assets/Images/about-me.jpg"
-                alt="Couple with mountains in background">
-            <p class="about-me-text mx-auto px-2">
-                🧩 Full-stack web developer fascinated by mathematics and solving complex problems. <br>
-                🖼️ Passionate about pursuing a more functional, intuitive and beautiful user experience. <br>
-                🎼 When I am not coding, I love to play music and explore the incredible beauty of nature. <br>
-                🐙 My priority is always to continually adapt and develop my skills to improve people's lives.
-            </p>
-        </div>
-        <div class="row mx-auto">
-            <div class="col-12 mx-auto text-center">
-                <a href="Assets/Resume.pdf" target="_blank">
-                    <button class="btn btn-teal">View Resume</button>
-                </a>
-            </div>
-        </div>
-    </section>
-
-    <!-- Portfolio -->
-    <section class="container py-5 text-center" id="portfolio">
-        <h1>Portfolio</h1>
-        <div class="portfolio-container my-3 mx-auto">
-            <div class="row mx-auto">
-                <!-- Column 1 -->
-                <div class="col-sm-6 mb-5 px-md-5">
-                    <article class="card mt-4 mt-md-5 bg-transparent border-0">
-                        <strong class="card-text text-white text-center">Remote Education Resource</strong>
-                        <div class="card-body">
-                            <img src="https://raw.githubusercontent.com/dmaysteinman/Remote-Education-Resource/main/Images/demo.png"
-                                class="img-card-top img-fluid img-thumbnail mb-1" alt="App preview">
-                            <div class="d-flex justify-content-around">
-                                <a href="https://dmaysteinman.github.io/Remote-Education-Resource/" class="link"
-                                    target="_blank">LIVE
-                                    DEMO</a>
-                                <a href="https://www.github.com/dmaysteinman/Remote-Education-Resource/" class="link"
-                                    target="_blank">VIEW CODE</a>
-                            </div>
-                        </div>
-                    </article>
-                    <article class="card mt-4 mt-md-5 bg-transparent border-0">
-                        <strong class="card-text text-white text-center">JavaScript Quiz</strong>
-                        <div class="card-body">
-                            <img src="https://raw.githubusercontent.com/joeldore/Code-Quiz/main/Assets/Images/demo.gif"
-                                class="img-card-top img-fluid img-thumbnail mb-1" alt="Thumbnail website preview">
-                            <div class="d-flex justify-content-around">
-                                <a href="https://joeldore.github.io/Code-Quiz/" class="link" target="_blank">LIVE
-                                    DEMO</a>
-                                <a href="https://www.github.com/joeldore/Code-Quiz/" class="link" target="_blank">VIEW
-                                    CODE</a>
-                            </div>
-                        </div>
-                    </article>
-                    <article class="card mt-4 mt-md-5 bg-transparent border-0">
-                        <strong class="card-text text-white text-center">Daily Planner</strong>
-                        <div class="card-body">
-                            <img src="https://raw.githubusercontent.com/joeldore/Daily-Planner/main/Assets/Images/demo.gif"
-                                class="img-card-top img-fluid img-thumbnail mb-1" alt="Thumbnail website preview">
-                            <div class="d-flex justify-content-around">
-                                <a href="https://joeldore.github.io/Daily-Planner/" class="link" target="_blank">LIVE
-                                    DEMO</a>
-                                <a href="https://www.github.com/joeldore/Daily-Planner/" class="link"
-                                    target="_blank">VIEW CODE</a>
-                            </div>
-                        </div>
-                    </article>
-                </div>
-                <!-- Column 2 -->
-                <div class="col-sm-6 px-md-5">
-                    <article class="card mt-4 mt-md-5 bg-transparent border-0">
-                        <strong class="card-text text-white text-center">Note Taking App</strong>
-                        <div class="card-body">
-                            <img src="https://raw.githubusercontent.com/JoelDore/Notebook-App/main/images/demo.gif"
-                                class="img-card-top img-fluid img-thumbnail mb-1" alt="App preview">
-                            <div class="d-flex justify-content-between">
-                                <a href="https://jd-notetaker.herokuapp.com/" class="link" target="_blank">LIVE DEMO</a>
-                                <a href="https://www.github.com/joeldore/Notebook-App/" class="link"
-                                    target="_blank">VIEW CODE</a>
-                            </div>
-                        </div>
-                    </article>
-                    <article class="card mt-4 mt-md-5 bg-transparent border-0">
-                        <strong class="card-text text-white text-center">Shopping Cart</strong>
-                        <div class="card-body">
-                            <img src="./Assets/Images/demo-dahing-plants.gif"
-                                class="img-card-top img-fluid img-thumbnail mb-1" alt="App preview">
-                            <div class="d-flex justify-content-center">
-                                <p class="text-light">Updated cart options for
-                                    <a href=" https://dahingplants.com/" class="link"><u>DAHING PLANTS</u></a>
-                                </p>
-                            </div>
-                        </div>
-                    </article>
-                    <article class="card mt-4 mt-md-5 bg-transparent border-0">
-                        <strong class="card-text text-white text-center">Weather Dashboard</strong>
-                        <div class="card-body">
-                            <img src="https://raw.githubusercontent.com/joeldore/Weather-Dashboard/main/Assets/Images/demo.gif"
-                                class="img-card-top img-fluid img-thumbnail mb-1" alt="App preview">
-                            <div class="d-flex justify-content-around">
-                                <a href="https://joeldore.github.io/Weather-Dashboard/" class="link"
-                                    target="_blank">LIVE DEMO</a>
-                                <a href="https://www.github.com/joeldore/Weather-Dashboard/" class="link"
-                                    target="_blank">VIEW CODE</a>
-                            </div>
-                        </div>
-                    </article>
-                </div>
-            </div>
-            <!--row end-->
-        </div>
-    </section>
-
-    <!-- Contact Form -->
-    <section class="container py-5" id="contact">
-        <h1 class="text-center">Contact</h1>
-        <div class="contact-container row mx-auto my-3 text-white">
-            <div class="card col-sm-12 bg-transparent">
-                <div class="card-body">
-                    <form action="https://formspree.io/f/xaylbqqr" method="POST">
-                        <div class="row">
-                            <div class="form-group col-sm-6">
-                                <label for="contactName">Your name:</label>
-                                <input type="text" name="name" class="form-control" required>
-                            </div>
-                            <div class="form-group col-sm-6">
-                                <label for="contactEmail">Email:</label>
-                                <input type="email" name="_replyto" class="form-control" required>
-                            </div>
-                        </div>
-                        <div class="form-group">
-                            <label for="contactMessage">Message:</label>
-                            <textarea name="message" class="form-control" rows="5" required
-                                placeholder="I would love to hire you! Let's connect."></textarea>
-                        </div><br>
-                        <div class="form-group text-center">
-                            <input type="hidden" name="_next" value="https://joeldore.github.io/Portfolio-Website/" />
-                            <button type="submit" class="btn btn-teal">Get in touch</button>
-                        </div>
-                    </form>
-                </div>
-            </div>
-        </div>
-    </section>
-
-    <footer class="footer bg-light text-center text-muted p-2">
-        <span class="footer-links m-2">
-            <a href="https://www.linkedin.com/in/joeldore"><img src="Assets/Images/linkedin.svg" alt="LinkedIn Logo"
-                    class="footer-img"></a> &nbsp;
-            <a href="https://github.com/JoelDore"><img src="Assets/Images/github.svg" alt="GitHub Logo"
-                    class="footer-img"></a>
-        </span>
-        <div class="d-sm-none my-1"></div>
-        dore.joel.dore@gmail.com | 603.781.9883
-    </footer>
-
-    <!-- JavaScript -->
-    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"
-        integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj"
-        crossorigin="anonymous"></script>
-    <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.1/dist/umd/popper.min.js"
-        integrity="sha384-9/reFTGAW83EW2RDu2S0VKaIzap3H66lZH81PoYlFhbGU+6BZp6G7niu735Sk7lN"
-        crossorigin="anonymous"></script>
-    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"
-        integrity="sha384-B4gt1jrGC7Jh4AgTPSdUtOBvfO8shuf57BaghqFfPlYxofvL8/KUEfYiJOMMV+rV"
-        crossorigin="anonymous"></script>
-    <script data-name="BMC-Widget" src="https://cdnjs.buymeacoffee.com/1.0.0/widget.prod.min.js" data-id="JoelDore"
-        data-description="Support me on Buy me a coffee!"
-        data-message="Thank you for visiting! Care to support me with a coffee? ☺" data-color="#0ad6b6"
-        data-position="Right" data-x_margin="18" data-y_margin="18"></script>
     <script src="./Assets/JS/script.js"></script>
 </body>
 
