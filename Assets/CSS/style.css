@@ -1,39 +1,69 @@
-@font-face {
-    font-family: Lato;
-    src: url("https://fonts.googleapis.com/css?family=Lato:100,100italic,300,300italic,regular,italic,700,700italic,900,900italic")
-}
-* {
-    font-family: Lato;
+*,
+*::before,
+*::after {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
 }
 
-.link {
+@import url('https://fonts.googleapis.com/css2?family=Lato&display=swap');
+
+body {
+    font-family: Lato, sans-serif;
+    color: var(--white);
+
+    --teal: #0ad6b8;
+    --teal-dark: #08aa92;
+    --white: #f4f4f4;
+    --gray: #d4d4d4;
+    --bg-green: #152010;
+    --bg-blue: #041424;
+    --bg-dark: #1f1f1f;
+}
+
+.container {
+    height: 100vh;
+    min-width: 100%;
+    background: url("../Images/lake-clark-bg.jpg");
+    background-size: cover;
+    background-position: center;
+}
+
+.navbar{
+    background: transparent
+}
+.navbar-collapse{
+    position: absolute;
+    top: 100%;
+    right: 0;
+    z-index: 1;
+}
+.nav-link {
+    text-align: right;
     font-size: smaller;
-    font-weight: bold;
-    color: white;
+    color: var(--white);
 }
-.link:hover {
+.nav-link:hover {
     font-size: normal;
-    color: black;
+    color: var(--gray);
 }
 
-.contact-container {
-    background-color: rgba(50, 50, 50, 0.75);
-    border-radius: 15px;
-    max-width: 45em;
+section{
+    min-height: 100vh;
+    text-align: center;
 }
 
 textarea {
     resize: none;
 }
-
 ::placeholder {
     color: #ccc !important;  
 }
 
 .btn-teal {
-    border: 3px solid hsl(171, 91%, 44%);
-    background-color: hsl(171, 91%, 44%);
+    border: 3px solid var(--teal);
+    background-color: var(--teal);
 }
 .btn-teal:hover {
-    background-color: hsl(171, 91%, 35%);
+    background-color: var(--teal-dark)
 }
