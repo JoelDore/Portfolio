@@ -53,6 +53,35 @@ section{
     text-align: center;
 }
 
+#intro{
+    position: relative;
+}
+#intro > h1 {
+    position: absolute;
+    top: 48%;
+    left: 25%;
+    font-size: 2rem;
+}
+#intro > h2 {
+    position: absolute;
+    top: 57%;
+    left: 25%;
+    font-size: 1.25rem;
+}
+
+
+#story img{
+    width: 50%;
+}
+
+#portfolio{
+
+}
+
+#contact{
+
+}
+
 textarea {
     resize: none;
 }
