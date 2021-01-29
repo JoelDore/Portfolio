@@ -34,10 +34,12 @@ body {
 }
 .navbar-collapse{
     position: absolute;
-    top: 100%;
     right: 0;
+    top:0;
     z-index: 1;
 }
+.navbar-collapse.show, .navbar-collapse.collapsing { top:100% }
+
 .nav-link {
     text-align: right;
     font-size: smaller;
@@ -64,8 +66,8 @@ section{
 }
 #intro > h2 {
     position: absolute;
-    top: 57%;
-    left: 25%;
+    top: 59%;
+    left: 28%;
     font-size: 1.25rem;
 }
 
