@@ -87,7 +87,6 @@ section:not(#intro) {
     place-items: center;
     gap: 1rem;
     grid-template-rows: minmax(4rem auto);
-    padding-left: ;
 }
 section:not(#intro) > h1 {
     grid-column: 1 / -1;
