@@ -16,6 +16,7 @@ body {
     --teal-dark: #08aa92;
     --white: #f4f4f4;
     --gray: #d4d4d4;
+    --gray-csv: 212, 212, 212;
     --bg-green: #152010;
     --bg-blue: #041424;
     --bg-dark: #1f1f1f;
@@ -26,7 +27,7 @@ body {
     min-width: 100%;
     background: url("../Images/lake-clark-bg.jpg");
     background-size: cover;
-    background-position: center;
+    background-position: left;
 }
 
 .navbar{
@@ -38,12 +39,16 @@ body {
     top:0;
     z-index: 1;
 }
-.navbar-collapse.show, .navbar-collapse.collapsing { top:100% }
+.navbar-collapse.show, .navbar-collapse.collapsing { 
+    top:100%;
+    background-color: rgb(var(--gray-csv), 0.5);
+    border-bottom-left-radius: 100%;
+}
 
 .nav-link {
     text-align: right;
     font-size: smaller;
-    color: var(--white);
+    color: var(--bg-green);
 }
 .nav-link:hover {
     font-size: normal;
@@ -60,13 +65,13 @@ section{
 }
 #intro > h1 {
     position: absolute;
-    top: 48%;
+    top: 47%;
     left: 25%;
     font-size: 2rem;
 }
 #intro > h2 {
     position: absolute;
-    top: 59%;
+    top: 58%;
     left: 28%;
     font-size: 1.25rem;
 }
