@@ -23,11 +23,8 @@ body {
 }
 
 .container {
-    height: 100vh;
     min-width: 100%;
-    background: url("../Images/lake-clark-bg.jpg");
-    background-size: cover;
-    background-position: left;
+    padding:0
 }
 
 .navbar{
@@ -48,20 +45,26 @@ body {
 .nav-link {
     text-align: right;
     font-size: smaller;
-    color: var(--bg-green);
 }
 .nav-link:hover {
-    font-size: normal;
-    color: var(--gray);
+    color: var(--gray) !important;
+}
+.nav-link.text-light:hover {
+    color: var(--bg-dark) !important;
 }
 
 section{
     min-height: 100vh;
+    width: 100%;
+    padding: 2rem;
     text-align: center;
 }
 
 #intro{
     position: relative;
+    background: url("../Images/lake-clark-bg.jpg");
+    background-size: cover;
+    background-position: left;
 }
 #intro > h1 {
     position: absolute;
@@ -76,17 +79,22 @@ section{
     font-size: 1.25rem;
 }
 
-
-#story img{
+#story {
+    background: radial-gradient(var(--bg-green), black);
+}
+#story img {
     width: 50%;
+}
+#story p {
+    font-size: .75rem;
 }
 
 #portfolio{
-
+    background: radial-gradient(var(--bg-blue), black);
 }
 
 #contact{
-
+    background: radial-gradient(var(--bg-dark), black);
 }
 
 textarea {
