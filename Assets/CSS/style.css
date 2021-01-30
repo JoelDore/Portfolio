@@ -86,14 +86,13 @@ section:not(#intro) {
     display: grid;
     place-items: center;
     gap: 1rem;
-    grid-template-rows: minmax(4rem auto);
 }
 section:not(#intro) > h1 {
     grid-column: 1 / -1;
 }
 
 #story {
-    background: radial-gradient(var(--bg-green), black);
+    background: radial-gradient(var(--bg-blue), black);
     grid-template-columns: minmax(8rem, 2fr) 1fr minmax(8rem, 2fr);
 }
 #story > div {
@@ -118,11 +117,54 @@ section:not(#intro) > h1 {
 }
 
 #portfolio{
-    background: radial-gradient(var(--bg-blue), black);
+    background: radial-gradient(var(--bg-dark), black);
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
 }
 
+.thumbnail {
+    position: relative;
+    background-image: url("https://img.itinari.com/pages/images/original/de1d814d-72bf-4803-b197-876103235fbe-naslovna.jpg?ch=DPR&dpr=1.25&w=1600&s=cd3ecaf520903d2b9ce3b6f1e81ea5c6");
+    background-size: cover;
+    width: 100%;
+    height: 100%;
+    transition: all 300ms ease-in;
+    color: var(--bg-dark);
+}
+
+.thumbnail:hover {
+    transform: scale(1.1);
+    z-index: 1;
+    box-shadow: 2px 2px 5px;
+}
+  
+.overlay {
+    display: grid;
+    place-items: center;
+    position: absolute;
+    top:0; left:0;
+    background-color: lightgrey;
+    width: inherit;
+    height: inherit;
+    font-size: 2rem;
+    font-weight: bold;
+    opacity: .5;
+}
+.overlay:hover {
+    animation: fadeout 300ms forwards;
+}
+  
+@keyframes fadeout {
+    to {        
+        opacity: 0;
+        cursor: pointer;
+        user-select: none;
+    }
+}
+
+/* End Codepen */
+
 #contact{
-    background: radial-gradient(var(--bg-dark), black);
+    background: radial-gradient(var(--bg-green), black);
 }
 
 textarea {
