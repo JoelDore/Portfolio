@@ -99,7 +99,7 @@ section:not(#intro) > h1 {
 #story > div {
     width: 100%;
     max-width: 25rem;
-    height: 100%;
+    height: fit-content;
     font-size: .8rem;
     font-weight: bold;
     padding: .5rem;
@@ -120,30 +120,32 @@ section:not(#intro) > h1 {
     margin-right: auto;
 }
 
+@media (max-width: 768px) {
+    #story > div {
+        font-size: .65rem;
+    }
+}
+
 #portfolio{
     background: radial-gradient(var(--bg-dark), black);
-    grid-template-columns: repeat(auto-fit, minmax(20rem, 1fr));
+    grid-template-columns: repeat(auto-fit, minmax(95%, 1fr));
+    grid-auto-rows: minmax(20rem, auto) !important;
 }
 
 .thumbnail {
     position: relative;
-    background-image: url("https://img.itinari.com/pages/images/original/de1d814d-72bf-4803-b197-876103235fbe-naslovna.jpg?ch=DPR&dpr=1.25&w=1600&s=cd3ecaf520903d2b9ce3b6f1e81ea5c6");
     background-size: cover;
+    background-position: center;
     width: 100%;
     height: 100%;
-    min-height: 10rem;
+    min-height: 20rem;
     transition: all 300ms ease-in;
     color: var(--bg-dark);
 }
 .thumbnail:hover {
-    transform: scale(1.1);
+    transform: scale(1.05);
     z-index: 1;
     box-shadow: 2px 2px 5px;
-}
-.thumbnail a,
-.thumbnail a:visited {
-    color: inherit;
-    text-decoration: inherit;
 }
 
 .overlay {
@@ -151,12 +153,12 @@ section:not(#intro) > h1 {
     place-items: center;
     position: absolute;
     top:0; left:0;
-    background-color: lightgrey;
+    background-color: rgb(var(--gray-csv), 0.6);
     width: inherit;
     height: inherit;
-    font-size: 2rem;
+    padding: .5rem;
+    font-size: 1.5rem;
     font-weight: bold;
-    opacity: .5;
 }
 .overlay:hover {
     animation: fadeout 300ms forwards;
