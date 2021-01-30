@@ -87,45 +87,80 @@
                 <!-- Grid of projects -->
                 <div class="thumbnail"
                     style="background-image: url('https://raw.githubusercontent.com/joeldore/Remote-Education-Resource/main/Images/demo.png')">
-                    <button class="overlay">
+                    <button type="button" class="overlay" data-bs-toggle="modal" data-bs-target="#projectModal">
                         Remote Education Resource
                     </button>
                 </div>
 
                 <div class="thumbnail"
                     style="background-image: url('https://raw.githubusercontent.com/joeldore/Weather-Dashboard/main/Assets/Images/demo.gif')">
-                    <button class="overlay">
+                    <button type="button" class="overlay" data-bs-toggle="modal" data-bs-target="#projectModal">
                         Weather Dashboard
                     </button>
                 </div>
 
                 <div class="thumbnail"
                     style="background-image: url('https://raw.githubusercontent.com/kcushing1/Recipe-Organizer/main/public/images/screenshot-desktop.png')">
-                    <button class="overlay">
+                    <button type="button" class="overlay" data-bs-toggle="modal" data-bs-target="#projectModal">
                         Recipe Organizer
                     </button>
                 </div>
 
                 <div class="thumbnail" style="background-image: url('./Assets/Images/demo-dahing-plants.gif')">
-                    <button class="overlay">
+                    <button type="button" class="overlay" data-bs-toggle="modal" data-bs-target="#projectModal">
                         Shopping Cart Update
                     </button>
                 </div>
 
                 <div class="thumbnail"
                     style="background-image: url('https://raw.githubusercontent.com/JoelDore/Notebook-App/main/images/demo.gif')">
-                    <button class="overlay">
+                    <button type="button" class="overlay" data-bs-toggle="modal" data-bs-target="#projectModal">
                         Notebook App
                     </button>
                 </div>
 
                 <div class="thumbnail"
                     style="background-image: url('https://raw.githubusercontent.com/JoelDore/Code-Quiz/main/Assets/Images/demo.gif')">
-                    <button class="overlay">
+                    <button type="button" class="overlay" data-bs-toggle="modal" data-bs-target="#projectModal">
                         JavaScript Quiz
                     </button>
                 </div>
 
+                <!-- Project Modal -->
+                <article class="project">
+                    <div class="modal fade" id="projectModal" tabindex="-1" aria-labelledby="projectName"
+                        aria-hidden="true">
+                        <div class="modal-dialog modal-lg modal-fullscreen-sm-down">
+
+                            <div class="modal-content bg-dark">
+                                <img id="projectImage" src="https://www.placecage.com/400/200" class="w-100"
+                                    alt="Project screenshot">
+                                <button type="button"
+                                    class="btn-close bg-light mt-4 position-absolute end-0 translate-middle"
+                                    data-bs-dismiss="modal" aria-label="Close"></button>
+                                <div class="card-body text-center">
+                                    <h1 id="projectName" class="card-title mx-auto">Project Name</h1>
+                                    <h4 id="projectDescription" class="card-text">A short description of project.</h4>
+                                    <div id="projectTechnologies" class="pb-3">
+                                        <button class="btn btn-secondary m-1" disabled>Sequelize</button>
+                                        <!-- etc... -->
+                                    </div>
+                                    <p id="projectSummary" class="card-text">What I learned from this project. What
+                                        problem I solved by
+                                        creating this project.</p>
+                                </div>
+                                <div class="modal-footer justify-content-center">
+                                    <button id="projectGithub" type="button" class="btn btn-primary">View GitHub
+                                        Code</button>
+                                    <button id="projectDeployed" type="button" class="btn btn-success">View Deployed
+                                        Site</button>
+                                </div>
+                            </div>
+
+                        </div>
+                    </div>
+                </article>
+                <!-- End Project Modal -->
             </section>
             <section id="contact" class="pt-5 px-3 px-sm-auto">
                 <h1>Contact Me</h1>
