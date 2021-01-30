@@ -181,3 +181,8 @@ textarea {
 .btn-teal:hover {
     background-color: var(--teal-dark)
 }
+
+#scrollToTop > a {
+    width: fit-content;
+    float: right;
+}
