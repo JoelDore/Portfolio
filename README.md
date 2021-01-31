@@ -11,18 +11,18 @@
 
 ---
 ## Mobile
-<img src='./Assets/Images/landing-mobile.png' width="19%">
-<img src='./Assets/Images/story-mobile.png' width="19%">
-<img src='./Assets/Images/portfolio-mobile.png' width="19%">
-<img src='./Assets/Images/project-mobile.png' width="19%">
-<img src='./Assets/Images/contact-mobile.png' width="19%">
+<img src='./Assets/Images/Screenshots/landing-mobile.png' width="19%">
+<img src='./Assets/Images/Screenshots/story-mobile.png' width="19%">
+<img src='./Assets/Images/Screenshots/portfolio-mobile.png' width="19%">
+<img src='./Assets/Images/Screenshots/project-mobile.png' width="19%">
+<img src='./Assets/Images/Screenshots/contact-mobile.png' width="19%">
 
 ## Desktop
-<img src='./Assets/Images/landing-desktop.png' width="80%">
-<img src='./Assets/Images/story-desktop.png' width="80%">
-<img src='./Assets/Images/portfolio-desktop.png' width="80%">
-<img src='./Assets/Images/project-desktop.png' width="80%">
-<img src='./Assets/Images/contact-desktop.png' width="80%">
+<img src='./Assets/Images/Screenshots/landing-desktop.png' width="80%">
+<img src='./Assets/Images/Screenshots/story-desktop.png' width="80%">
+<img src='./Assets/Images/Screenshots/portfolio-desktop.png' width="80%">
+<img src='./Assets/Images/Screenshots/project-desktop.png' width="80%">
+<img src='./Assets/Images/Screenshots/contact-desktop.png' width="80%">
 
 ---
 Currently deployed at [GitHub Pages](https://joeldore.github.io/Portfolio/)
