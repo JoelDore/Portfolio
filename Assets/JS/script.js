@@ -1,14 +1,62 @@
-const navbar = $(".navbar")
-const navbarNameText = $("#nav-name")
+$(document).ready(() => {
 
-// Navbar scroll event
-$(window).scroll(() => {
-    if ($(this).scrollTop() > navbar.height()) {
-        // transparent bg, remove name
-        navbar.addClass("transparent")
-        navbarNameText.text("")
-    } else {
-        navbar.removeClass("transparent")
-        navbarNameText.text("Joel Dore")
-    }
+    const btnToTop = $("#scrollToTop")
+    const navLinks = $(".nav-link")
+    const navbar = $(".navbar")
+    const projects = $(".overlay")
+
+    $(window).scroll(() => {
+        // Within top half of intro section
+        if ($(this).scrollTop() < window.innerHeight / 2) {
+            // hide button 
+            btnToTop.addClass("d-none")
+            // reset navbar
+            navLinks.removeClass("text-light")
+            navbar.removeClass("navbar-dark")
+        } else {
+            // show button
+            btnToTop.removeClass("d-none")
+            // lighten navbar
+            navLinks.addClass("text-light")
+            navbar.addClass("navbar-dark")
+        }
+    })
+
+    // Populate modal with project data on click
+    projects.click((event) => {
+
+        // define vars for e.target.attr("data-attr") values
+        const imageSrc = $(event.target).data("imagesrc")
+        const name = $(event.target).data("name")
+        const desc = $(event.target).data("desc")
+        const techs = $(event.target).data("tech").split(",")
+        const summary = $(event.target).data("summary")
+        const github = $(event.target).data("github")
+        const deployed = $(event.target).data("deployed")
+
+        const githubLink = $("#projectGithub")
+        const deployedLink = $("#projectDeployed")
+
+        // update modal content w/ values
+        $("#projectImage").attr("src", imageSrc)
+        $("#projectName").text(name)
+        $("#projectDescription").text(desc)
+        // clear prev techs & append current
+        $("#projectTechnologies").empty()
+        techs.forEach(tech => {
+            const button = `<button class="btn btn-secondary m-1" disabled>${tech}</button>`
+            $("#projectTechnologies").append(button)
+        })
+        $("#projectSummary").html(summary)
+
+        if (github) {
+            githubLink.attr("href", github);
+            githubLink.show();
+        } else githubLink.hide();
+        if (deployed) {
+            deployedLink.attr("href", deployed);
+            deployedLink.show();
+        } else deployedLink.hide();
+    })
+
 })
