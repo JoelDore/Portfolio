@@ -175,20 +175,19 @@ section:not(#intro) > h1 {
 #contact{
     background: radial-gradient(var(--bg-green), black);
 }
+.form-group {
+    text-align: left;
+    margin-bottom: 1rem;
+}
+.form-group label {
+    margin-bottom: 0.2rem;
+}
 
 textarea {
     resize: none;
 }
 ::placeholder {
     color: #ccc !important;  
-}
-
-.btn-teal {
-    border: 3px solid var(--teal);
-    background-color: var(--teal);
-}
-.btn-teal:hover {
-    background-color: var(--teal-dark)
 }
 
 #scrollToTop > a {
