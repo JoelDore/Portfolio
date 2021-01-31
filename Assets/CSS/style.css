@@ -64,7 +64,7 @@ section{
 #intro{
     position: relative;
     /** Lake Clark, AK (src: https://www.expeditionsalaska.com) */
-    background: url("../Images/lake-clark-bg.jpg");
+    background: url("../Images/Public/lake-clark-bg.jpg");
     background-size: cover;
     background-position: left;
 }
