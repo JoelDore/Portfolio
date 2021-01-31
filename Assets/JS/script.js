@@ -34,6 +34,9 @@ $(document).ready(() => {
         const github = $(event.target).data("github")
         const deployed = $(event.target).data("deployed")
 
+        const githubLink = $("#projectGithub")
+        const deployedLink = $("#projectDeployed")
+
         // update modal content w/ values
         $("#projectImage").attr("src", imageSrc)
         $("#projectName").text(name)
@@ -45,8 +48,15 @@ $(document).ready(() => {
             $("#projectTechnologies").append(button)
         })
         $("#projectSummary").html(summary)
-        $("#projectGithub").attr("href", github)
-        $("#projectDeployed").attr("href", deployed)
+
+        if (github) {
+            githubLink.attr("href", github);
+            githubLink.show();
+        } else githubLink.hide();
+        if (deployed) {
+            deployedLink.attr("href", deployed);
+            deployedLink.show();
+        } else deployedLink.hide();
     })
 
 })
