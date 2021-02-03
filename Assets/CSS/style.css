@@ -197,8 +197,11 @@ textarea {
 }
 
 #logos img {
+    position:relative;
     margin-left: 1rem;
     margin-right: 1rem;
+    /* bring to front of fixed scrollToTop */
+    z-index: 1050;
 }
 
 #scrollToTop > a {
