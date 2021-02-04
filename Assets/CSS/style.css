@@ -55,6 +55,15 @@ body {
     color: var(--bg-dark) !important;
 }
 
+/* Resume nav button */
+.navbar-collapse.show .nav-link.btn, 
+.navbar-collapse.collapsing .nav-link.btn {
+    float: right;
+}
+.nav-item > a:not(.nav-link) {
+    text-decoration: none;
+}
+
 section{
     min-height: 100vh;
     width: 100%;
