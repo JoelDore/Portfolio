@@ -46,13 +46,22 @@ body {
 
 .nav-link {
     text-align: right;
-    font-size: smaller;
+    font-weight: bold;
 }
 .nav-link:hover {
     color: var(--gray) !important;
 }
 .nav-link.text-light:hover {
     color: var(--bg-dark) !important;
+}
+
+/* Resume nav button */
+.navbar-collapse.show .nav-link.btn, 
+.navbar-collapse.collapsing .nav-link.btn {
+    float: right;
+}
+.nav-item > a:not(.nav-link) {
+    text-decoration: none;
 }
 
 section{
@@ -197,8 +206,11 @@ textarea {
 }
 
 #logos img {
+    position:relative;
     margin-left: 1rem;
     margin-right: 1rem;
+    /* bring to front of fixed scrollToTop */
+    z-index: 1050;
 }
 
 #scrollToTop > a {
