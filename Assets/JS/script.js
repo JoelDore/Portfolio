@@ -25,7 +25,7 @@ $(document).ready(() => {
     // Populate modal with project data on click
     projects.click((event) => {
 
-        // define vars for e.target.attr("data-attr") values
+        // Define data-attr values
         const imageSrc = $(event.target).data("imagesrc")
         const name = $(event.target).data("name")
         const desc = $(event.target).data("desc")
@@ -34,29 +34,41 @@ $(document).ready(() => {
         const github = $(event.target).data("github")
         const deployed = $(event.target).data("deployed")
 
+        const projectImage = $("#projectImage")
+        const projectWebm = $("#projectWebm")
         const githubLink = $("#projectGithub")
         const deployedLink = $("#projectDeployed")
 
-        // update modal content w/ values
-        $("#projectImage").attr("src", imageSrc)
+        // Add source to img/video
+        if (imageSrc.slice(-5) === ".webm") {
+            projectImage.hide().removeAttr("src")
+            projectWebm.show().attr("src", imageSrc)
+        } else {
+            projectWebm.hide().removeAttr("src")
+            projectImage.show().attr("src", imageSrc)
+        }
+
         $("#projectName").text(name)
         $("#projectDescription").text(desc)
-        // clear prev techs & append current
+        $("#projectSummary").html(summary)
+
+        // Update techs
         $("#projectTechnologies").empty()
         techs.forEach(tech => {
             const button = `<button class="btn btn-secondary m-1" disabled>${tech}</button>`
             $("#projectTechnologies").append(button)
         })
-        $("#projectSummary").html(summary)
 
+        // Add github/deployed links if relevant
         if (github) {
-            githubLink.attr("href", github);
-            githubLink.show();
-        } else githubLink.hide();
+            githubLink.show().attr("href", github);
+        }
+        else githubLink.hide();
+
         if (deployed) {
-            deployedLink.attr("href", deployed);
-            deployedLink.show();
-        } else deployedLink.hide();
+            deployedLink.show().attr("href", deployed);
+        }
+        else deployedLink.hide();
     })
 
 })
