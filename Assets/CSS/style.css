@@ -199,6 +199,14 @@ textarea {
     align-self: end;
 }
 
+.footer a {
+    color: var(--white);
+    text-decoration-color: var(--white);
+    position: relative;
+    /* bring to front of fixed scrollToTop */
+    z-index: 1050;
+}
+
 #coffee {
     height: 2rem;
     /* bring to front of fixed scrollToTop */
