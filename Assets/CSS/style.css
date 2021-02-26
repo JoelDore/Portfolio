@@ -19,6 +19,7 @@ body {
     --gray-csv: 212, 212, 212;
     --bg-green: #152010;
     --bg-blue: #041424;
+    --bg-violet: #160824;
     --bg-dark: #2a2a2a;
     --problem: hsl(0, 50%, 83%);
     --solution: hsl(120, 50%, 83%);
@@ -176,6 +177,16 @@ section:not(#intro) > h1 {
         user-select: none;
     }
 }
+
+
+#tech {
+    background: radial-gradient(var(--bg-violet), black);
+}
+
+#tech button {
+    height: 5rem;
+}
+
 
 #contact{
     background: radial-gradient(var(--bg-green), black);
