@@ -192,6 +192,11 @@ section:not(#intro) > h1 {
     pointer-events: none;
 }
 
+#tech .mern::first-letter {
+    font-size: larger;
+    font-weight: bolder;
+}
+
 
 #contact{
     background: radial-gradient(var(--bg-green), black);
