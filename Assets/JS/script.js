@@ -71,4 +71,28 @@ $(document).ready(() => {
         else deployedLink.hide();
     })
 
+    // Responsive button size for 'Tech Skills'
+    resizeTechBtns()
+
+    $(window).resize(() => {
+        resizeTechBtns()
+    })
+
+    function resizeTechBtns() {
+        const techBtns = $("#tech button");
+        const screenWidth = $(this).outerWidth();
+
+        if (screenWidth < 768) {
+            techBtns.addClass("btn-sm")
+            techBtns.removeClass("btn-lg");
+        }
+        else if (screenWidth < 992) {
+            techBtns.removeClass("btn-sm");
+            techBtns.removeClass("btn-lg");
+        }
+        else {
+            techBtns.addClass("btn-lg")
+            techBtns.removeClass("btn-sm");
+        }
+    }
 })
