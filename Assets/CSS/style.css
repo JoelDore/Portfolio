@@ -185,6 +185,7 @@ section:not(#intro) > h1 {
 
 #tech button {
     height: 5rem;
+    pointer-events: none;
 }
 
 
